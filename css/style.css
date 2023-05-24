@@ -118,7 +118,7 @@ header .navbar li a:hover{
     transition: 0.5s;
 }
 
-.contenido .tituloBox a{
+.contenido .tituloBox a:hover{
     color: white;
     background: rgb(137, 66, 188);
     transition: 0.5s;
