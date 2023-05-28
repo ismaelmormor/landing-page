@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -33,6 +34,9 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+header.inverse{
+    border-bottom: 5px solid rgb(137, 66, 188);
+}
 header .logo{
     color: #fff;
     font-size: 1.5em;
@@ -60,6 +64,15 @@ header .navbar li{
 header .navbar li a{
     text-decoration: none;
     color: white;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+header .navbar.inverse li a{
+    text-decoration: none;
+    color: black;
     font-weight: 600;
     padding: 10px;
     transition: 0.3s;
@@ -189,4 +202,170 @@ header .navbar li a:hover{
     width: 100%;
     height: 100%;
     z-index: -1000;
+}
+
+/***********************************/
+/*PÁGINA CURRICULUM VITAE*/
+.bodyCV{
+    background: #fff; 
+}
+.todoCV{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+.encabezadoCV{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.encabezadoCV .imgCV{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    border: 10px solid rgb(137, 66, 188);
+    border-radius: 50%;
+}
+.imgCV img{
+    height: 100%;
+}
+
+/*Título CV*/
+.encabezadoCV .tituloCV{
+    position: relative;
+    max-width: 600px;
+}
+
+.encabezadoCV .tituloCV h2{
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+.encabezadoCV .tituloCV h3{
+    font-size: 24px;
+    font-weight: normal;
+}
+.encabezadoCV .tituloCV ion-icon{
+    color: rgb(137, 66, 188);
+    padding-right: 10px;
+}
+.encabezadoCV .tituloCV p{
+    font-family: 'Lora', serif;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/*ASIDES*/
+.div-asides{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.div-asides aside{
+    width: 580px;
+    margin-bottom: 50px;
+}
+
+.div-asides aside h2 .rectangulo{
+    width: 50px;
+    height: 36px;
+    margin-right: 15px;
+    background-color: rgb(137, 66, 188);
+}
+
+.div-asides aside h2{
+    margin-left: -65px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.div-asides aside p{
+    text-align: justify;
+    font-size: 18px;
+}
+
+.div-asides aside h3 span{
+    max-width: 50px;
+    margin-right: 10px;
+}
+.div-asides aside h3{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.div-asides aside .texto-fecha{
+    margin-left: 60px;
+}
+
+.div-asides .habilidades{
+    margin-top: -150px;
+}
+.div-asides ul{
+    margin-left: 20px;
+}
+.div-asides ul li{
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.div-asides .ofimatica{
+    margin-top: -200px;
+}
+
+/*Barras de carga*/
+.barra-carga {
+    position: relative;
+    width: 300px;
+    height: 10px;
+    background-color: #b4b4b4;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.barra-90 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 100%;
+    background-color: rgb(137, 66, 188);
+    border-radius: 10px;
+}
+
+.barra-80 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100%;
+    background-color: rgb(137, 66, 188);
+    border-radius: 10px;
+}
+
+.barra-75 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    background-color: rgb(137, 66, 188);
+    border-radius: 10px;
+}
+.barra-60 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 100%;
+    background-color: rgb(137, 66, 188);
+    border-radius: 10px;
 }
