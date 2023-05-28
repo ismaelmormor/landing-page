@@ -225,6 +225,25 @@ header .navbar li a:hover{
 }
 
 /***********************************/
+/*QUIEN SOY*/
+section .contenedorSobre{
+    max-width: 1500px;
+}
+section .contenedorSobre h2{
+    color: rgb(137, 66, 188);
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+section .contenedorSobre p{
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+
+/***********************************/
 /*PÁGINA CURRICULUM VITAE*/
 .bodyCV{
     background: linear-gradient(to bottom,rgb(137, 66, 188, 0.15)15%, #fff 60%, rgb(137, 66, 188, 0.2));
